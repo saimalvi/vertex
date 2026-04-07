@@ -259,6 +259,28 @@ h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;color:#1c2b1c}
 /* Step panels */
 .mstep-panel{display:none}.mstep-panel.active{display:block}
 
+/* ═══════════ AUDIT MODAL ═══════════ */
+.audit-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .25s ease}
+.audit-modal-overlay.active{opacity:1;visibility:visible}
+.audit-modal{background:#fff;border-radius:16px;padding:40px 36px;max-width:520px;width:92%;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.2);transform:translateY(16px);transition:transform .25s ease}
+.audit-modal-overlay.active .audit-modal{transform:translateY(0)}
+.audit-modal-close{position:absolute;top:14px;right:18px;background:none;border:none;font-size:1.6rem;color:var(--g400);cursor:pointer;line-height:1;transition:color .15s}
+.audit-modal-close:hover{color:#1c2b1c}
+.audit-modal-title{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#1c2b1c;margin:0 0 6px}
+.audit-modal-sub{font-size:.88rem;color:var(--g500);margin:0 0 24px;line-height:1.6}
+.audit-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.audit-row.single{grid-template-columns:1fr}
+.audit-field label{display:block;font-size:.75rem;font-weight:700;color:#1c2b1c;margin-bottom:4px}
+.audit-field label span{color:#e05a2b}
+.audit-field input{width:100%;padding:11px 13px;border:1px solid var(--g200);border-radius:var(--radius);font-family:'Source Sans 3',sans-serif;font-size:.88rem;color:#333;outline:none;transition:border .2s;background:#fff}
+.audit-field input:focus{border-color:var(--green)}
+.audit-submit-btn{width:100%;padding:13px;background:var(--green);color:#fff;border:none;border-radius:50px;font-weight:700;font-size:.9rem;cursor:pointer;transition:all .2s;margin-top:6px;font-family:'Source Sans 3',sans-serif}
+.audit-submit-btn:hover{background:var(--green-dark);box-shadow:0 4px 14px rgba(90,125,80,.3);transform:translateY(-1px)}
+@media(max-width:768px){
+  .audit-modal{padding:28px 20px}
+  .audit-row{grid-template-columns:1fr}
+}
+
 /* ═══════════ BOTTOM CTA ═══════════ */
 .bottom-cta{background:var(--green-dark);padding:52px 0}
 .bottom-cta .container{text-align:center}

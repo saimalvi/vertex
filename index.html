@@ -3,7 +3,7 @@
 <div class="container" style="display:flex;align-items:center;justify-content:center;gap:12px">
 <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:#f59e0b;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
 <span>Limited spots available &mdash; <strong>Free Law Firm Marketing Audit</strong></span>
-<a href="#consultation" class="promo-bar-btn">Claim Yours &rarr;</a>
+<a href="#" class="promo-bar-btn" onclick="openAuditModal();return false">Claim Yours &rarr;</a>
 </div>
 </div>
 <nav class="top-nav"><div class="container">
@@ -33,7 +33,7 @@
 <p class="hero-subtitle">Vertex Law Marketing delivers high-performance Google Ads, SEO, and web design exclusively for law firms. We drive revenue, not just clicks.</p>
 <div class="hero-cta-group">
 <a href="#consultation" class="hero-btn-primary">Request Custom Quote <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-<a href="#consultation" class="hero-btn-outline">Free Marketing Audit</a>
+<a href="#" class="hero-btn-outline" onclick="openAuditModal();return false">Free Marketing Audit</a>
 </div>
 <div class="hero-image-wrap">
 <img src="Hero image.jpg" alt="Vertex Law Marketing hero" class="hero-image" loading="lazy">
@@ -246,5 +246,53 @@ document.getElementById('mstepForm').addEventListener('submit',function(){
     },{threshold:0.08}).observe(testiSection);
   }
 })();
+</script>
+
+<!-- ═══════════ AUDIT MODAL ═══════════ -->
+<div class="audit-modal-overlay" id="auditModal">
+<div class="audit-modal">
+<button class="audit-modal-close" onclick="closeAuditModal()">&times;</button>
+<div id="auditFormWrap">
+<h3 class="audit-modal-title">Free Law Firm Marketing Audit</h3>
+<p class="audit-modal-sub">Get a detailed review of your website, SEO, and online presence — completely free.</p>
+<form id="auditForm" action="https://formsubmit.co/saim.alvi103@gmail.com" method="POST" target="audit-iframe">
+<input type="hidden" name="_subject" value="Free Marketing Audit Request - Vertex Law Marketing">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<div class="audit-row">
+<div class="audit-field"><label>First Name <span>*</span></label><input name="First Name" placeholder="First Name" required></div>
+<div class="audit-field"><label>Last Name</label><input name="Last Name" placeholder="Last Name"></div>
+</div>
+<div class="audit-row single">
+<div class="audit-field"><label>Law Firm Name</label><input name="Firm Name" placeholder="Law Firm Name"></div>
+</div>
+<div class="audit-row">
+<div class="audit-field"><label>Email <span>*</span></label><input type="email" name="Email" placeholder="Email" required></div>
+<div class="audit-field"><label>Phone</label><input type="tel" name="Phone" placeholder="Phone"></div>
+</div>
+<div class="audit-row single">
+<div class="audit-field"><label>Website URL <span>*</span></label><input type="url" name="Website URL" placeholder="https://www.yourlawfirm.com" required></div>
+</div>
+<button type="submit" class="audit-submit-btn">Get My Free Audit</button>
+</form>
+<iframe name="audit-iframe" style="display:none"></iframe>
+</div>
+<div id="auditSuccess" style="display:none;text-align:center;padding:40px 20px">
+<svg viewBox="0 0 24 24" style="width:56px;height:56px;stroke:#5a7d50;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:18px"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+<h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#1c2b1c;margin-bottom:10px">Thanks! Your Free Law Firm Marketing Audit is being prepared.</h3>
+<p style="font-size:.92rem;color:#777;line-height:1.7">We'll review your website and send insights shortly.</p>
+</div>
+</div>
+</div>
+<script>
+function openAuditModal(){document.getElementById('auditModal').classList.add('active');document.body.style.overflow='hidden'}
+function closeAuditModal(){document.getElementById('auditModal').classList.remove('active');document.body.style.overflow=''}
+document.getElementById('auditModal').addEventListener('click',function(e){if(e.target===this)closeAuditModal()});
+document.getElementById('auditForm').addEventListener('submit',function(){
+  setTimeout(function(){
+    document.getElementById('auditFormWrap').style.display='none';
+    document.getElementById('auditSuccess').style.display='block';
+  },300);
+});
 </script>
 </body></html>
