@@ -28,18 +28,6 @@
 .about-diff-card h4{font-size:.97rem;font-weight:700;color:#1c2b1c;font-family:'Source Sans 3',sans-serif;margin:0 0 8px;line-height:1.3}
 .about-diff-card p{font-size:.85rem;color:var(--g500);line-height:1.72;margin:0}
 
-.about-team{padding:80px 0;background:#fff}
-.about-team-head{text-align:center;margin-bottom:52px}
-.about-team-head .kicker{font-size:.75rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
-.about-team-head h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#1c2b1c;font-family:'Playfair Display',serif;margin:0 0 14px}
-.about-team-head p{font-size:.96rem;color:var(--g500);max-width:520px;margin:0 auto;line-height:1.75}
-.about-team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.about-team-card{background:#fff;border:1px solid var(--g200);border-radius:var(--radius-lg);padding:32px 24px;text-align:center;transition:box-shadow .25s,transform .25s}
-.about-team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.07);transform:translateY(-3px)}
-.about-team-avatar{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-weight:800;font-size:1.1rem;color:#fff;letter-spacing:.5px}
-.about-team-card h4{font-size:1rem;font-weight:700;color:#1c2b1c;margin:0 0 4px;font-family:'Source Sans 3',sans-serif}
-.about-team-card .role{font-size:.82rem;color:var(--g400);line-height:1.4}
-.about-team-card .bio{font-size:.82rem;color:var(--g500);line-height:1.68;margin-top:12px;padding-top:12px;border-top:1px solid var(--g200)}
 
 .about-commitment{padding:80px 0;background:var(--green-dark)}
 .about-commitment .container{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
@@ -72,7 +60,6 @@
   .about-story .container{grid-template-columns:1fr;gap:44px}
   .about-stats-grid{grid-template-columns:repeat(3,1fr);gap:36px}
   .about-diff-grid{grid-template-columns:repeat(2,1fr)}
-  .about-team-grid{grid-template-columns:repeat(2,1fr)}
   .about-commitment .container{grid-template-columns:1fr;gap:44px}
   .about-testi-grid{grid-template-columns:1fr}
 }
@@ -82,8 +69,6 @@
   .about-stats-grid{grid-template-columns:repeat(2,1fr);gap:28px}
   .about-difference{padding:56px 0}
   .about-diff-grid{grid-template-columns:1fr}
-  .about-team{padding:56px 0}
-  .about-team-grid{grid-template-columns:1fr}
   .about-commitment{padding:56px 0}
   .about-testimonials{padding:56px 0}
   .about-testi-card{padding:24px}
@@ -170,53 +155,6 @@
 </div>
 </div></section>
 
-<!-- ═══════════ TEAM ═══════════ -->
-<section class="about-team"><div class="container">
-<div class="about-team-head">
-<p class="kicker">Our People</p>
-<h2>Meet the Vertex Law Marketing team.</h2>
-<p>Creative, passionate professionals who wake up every morning thinking about how to grow your law firm.</p>
-</div>
-<div class="about-team-grid">
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#5a7d50">MC</div>
-<h4>Michael Chase</h4>
-<span class="role">Founder &amp; CEO</span>
-<p class="bio">Michael founded Vertex Law Marketing in 2012 after spending years managing digital marketing for top personal injury and criminal defense firms. He leads overall strategy and client growth.</p>
-</div>
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#5c6bc0">JW</div>
-<h4>Jennifer Walsh</h4>
-<span class="role">VP of Digital Marketing</span>
-<p class="bio">Jennifer oversees all SEO and paid search teams. With 10+ years in legal marketing, she has managed campaigns for law firms generating thousands of signed cases annually.</p>
-</div>
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#26a69a">DT</div>
-<h4>Daniel Torres</h4>
-<span class="role">Director of SEO</span>
-<p class="bio">Daniel leads our organic search team and has ranked law firms on page one for some of the most competitive legal keywords in the country, including major personal injury markets.</p>
-</div>
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#e07b3f">RK</div>
-<h4>Rachel Kim</h4>
-<span class="role">Director of Content Strategy</span>
-<p class="bio">Rachel manages our content and copywriting team. She ensures every word on your website is optimized to convert visitors into phone calls and signed clients.</p>
-</div>
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#42a5f5">MW</div>
-<h4>Marcus Webb</h4>
-<span class="role">VP of Sales &amp; Client Relations</span>
-<p class="bio">Marcus has helped hundreds of law firms find the right marketing strategy. He leads initial consultations and ensures every new client is set up for long-term success.</p>
-</div>
-<div class="about-team-card">
-<div class="about-team-avatar" style="background:#8d6e63">AF</div>
-<h4>Alicia Flores</h4>
-<span class="role">Senior Account Manager</span>
-<p class="bio">Alicia is the day-to-day contact for many of our top clients. Known for her responsiveness and deep knowledge of legal marketing, she consistently earns rave reviews from attorneys she works with.</p>
-</div>
-</div>
-</div></section>
-
 <!-- ═══════════ OUR COMMITMENT ═══════════ -->
 <section class="about-commitment"><div class="container">
 <div class="about-commit-text">
@@ -284,7 +222,7 @@
 <h2>Ready for law firm marketing that actually works?</h2>
 <p>Schedule a free, zero-obligation consultation with one of our senior consultants today.</p>
 <div class="bottom-cta-links">
-<a href="index.html#consultation" class="btn-primary">Schedule a Free Strategy Session</a>
+<a href="index.html#consultation" class="btn-primary">Get a Quote</a>
 
 </div>
 </div></section>
