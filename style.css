@@ -246,8 +246,8 @@ h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;color:#1c2b1c}
 .mstep-consent input{margin-top:3px;accent-color:var(--accent)}
 /* Buttons row */
 .mstep-btns{display:flex;gap:12px;margin-top:6px}
-.mstep-next{flex:1;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:50px;font-weight:700;font-size:.92rem;cursor:pointer;transition:background .2s}
-.mstep-next:hover{background:var(--accent-hover)}
+.mstep-next{flex:none;padding:12px 36px;background:var(--accent);color:#fff;border:none;border-radius:50px;font-weight:700;font-size:.88rem;cursor:pointer;transition:all .25s ease;box-shadow:0 4px 14px rgba(212,138,44,.35);letter-spacing:.3px;font-family:'Source Sans 3',sans-serif}
+.mstep-next:hover{background:var(--accent-hover);box-shadow:0 6px 20px rgba(212,138,44,.45);transform:translateY(-2px)}
 .mstep-back{padding:14px 24px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.6);border:none;border-radius:50px;font-weight:700;font-size:.92rem;cursor:pointer;transition:all .2s}
 .mstep-back:hover{background:rgba(255,255,255,.14);color:#fff}
 /* Step panels */
