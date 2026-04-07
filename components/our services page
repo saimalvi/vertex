@@ -1,0 +1,135 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+
+<div class="bg-white px-8 lg:px-20 xl:px-[120px] py-20 flex flex-col items-center">
+    <div class="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl w-full mb-9">
+        <h1 class="text-2xl md:text-3xl font-medium text-zinc-800 mb-4 tracking-tight">
+            Designed for real products
+        </h1>
+        <p class="text-sm text-zinc-800 tracking-tight max-w-xl">
+            We create thoughtfully crafted experiences that serve real users while driving meaningful business outcomes.
+        </p>
+    </div>
+
+    <!-- Features Grid with Borders -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl w-full border-t border-l border-zinc-200">
+        
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-linear-to-b from-white to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.25 15.75a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M13.598 3.066C10.665 6.104 6.75 7.08.938 7.454m14.625 1.429c-4.966-1.057-9.106.75-12.285 4.74" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M5.67 1.313c3.278 4.5 4.5 7.065 6 13.29" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    User-first design
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                We design with real users in mind, focusing on clarity, usability and accessibility from day one.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="absolute left-0 top-12 bottom-12 md:top-17 md:bottom-17 w-1.5 bg-indigo-500 rounded-r"></div>
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.05.75H3.45a1.8 1.8 0 0 0-1.8 1.8v7.2a1.8 1.8 0 0 0 1.8 1.8h12.6a1.8 1.8 0 0 0 1.8-1.8v-7.2a1.8 1.8 0 0 0-1.8-1.8M.75 15.148h18" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Fully responsive
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Interfaces that look and feel great on desktop, tablet and mobile, no compromises.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14.665A6.667 6.667 0 1 0 8 1.332a6.667 6.667 0 0 0 0 13.333" /><path d="M8 1.332a9.667 9.667 0 0 0 0 13.333A9.667 9.667 0 0 0 8 1.332M1.333 8h13.334" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z" /></clipPath></defs></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Global-ready UX
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Clean files, clear specs and developer-friendly documentation - ready to build.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.553 1.452a1.33 1.33 0 0 0-1.106 0l-5.714 2.6a.667.667 0 0 0 0 1.22l5.72 2.607a1.33 1.33 0 0 0 1.107 0l5.72-2.6a.667.667 0 0 0 0-1.22z" /><path d="M1.333 8a.67.67 0 0 0 .387.607l5.733 2.606a1.33 1.33 0 0 0 1.1 0l5.72-2.6A.67.67 0 0 0 14.667 8" /><path d="M1.333 11.332a.67.67 0 0 0 .387.607l5.733 2.606a1.33 1.33 0 0 0 1.1 0l5.72-2.6a.67.67 0 0 0 .394-.613" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z" /></clipPath></defs></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Scalable systems
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Consistent components, tokens and patterns built to grow with your product.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.333 1.332 14 3.999l-2.667 2.666" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M2 7.333v-.666A2.667 2.667 0 0 1 4.667 4H14M4.667 14.665 2 12l2.667-2.667" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M14 8.668v.667A2.667 2.667 0 0 1 11.333 12H2" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Easy to iterate
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Flexible designs that adapt quickly as your product, users and goals evolve.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.667 9.334a.667.667 0 0 1-.52-1.087l6.6-6.8a.333.333 0 0 1 .573.307L8.04 5.767a.667.667 0 0 0 .627.9h4.666a.666.666 0 0 1 .52 1.087l-6.6 6.8a.334.334 0 0 1-.573-.307l1.28-4.013a.667.667 0 0 0-.627-.9z" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Performance-aware
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Optimized layouts and interactions that support fast load times and smooth experiences.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M9.8 4.201a.667.667 0 0 0 0 .933l1.067 1.067a.666.666 0 0 0 .933 0l2.07-2.07c.214-.215.576-.147.656.145A4 4 0 0 1 9.02 8.981l-5.273 5.274a1.414 1.414 0 0 1-2-2L7.021 6.98a4 4 0 0 1 4.704-5.506c.292.08.36.441.146.656z" stroke="#4f39f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z" /></clipPath></defs></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Tool-friendly
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                Designs built with localization, multiple languages and diverse audiences in mind.
+            </p>
+        </div>
+
+        <div class="relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-300 cursor-pointer bg-white hover:bg-linear-to-b hover:from-white hover:to-[#EEF0FF]">
+            <div class="flex items-center gap-2.5 mb-1">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m10.667 12 4-4-4-4M5.333 4l-4 4 4 4" stroke="#4f39f6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <h3 class="text-sm font-medium text-zinc-800 leading-snug">
+                    Dev-ready handoff
+                </h3>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+                From startups to enterprise, our designs integrate seamlessly with your existing workflows.
+            </p>
+        </div>
+    </div>
+</div>

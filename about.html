@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>About Vertex Law Marketing | Law Firm Digital Marketing Agency</title><meta name="description" content="Since 2012, Vertex Law Marketing has helped law firms across the U.S. dominate Google and generate more signed cases. Learn about our team, our values, and our story."><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<style>
+/* ── ABOUT PAGE SPECIFIC ── */
+.about-story{padding:80px 0;background:#fff}
+.about-story .container{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-story-text .kicker{font-size:.75rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
+.about-story-text h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#1c2b1c;font-family:'Playfair Display',serif;line-height:1.2;margin:0 0 22px}
+.about-story-text p{font-size:.95rem;color:var(--g600);line-height:1.82;margin-bottom:14px}
+.about-story-text p:last-child{margin-bottom:0}
+
+.about-stats-strip{background:var(--navy);padding:68px 0}
+.about-stats-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;text-align:center}
+.about-stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;color:var(--green-muted);line-height:1}
+.about-stat-label{font-size:.78rem;color:rgba(255,255,255,.42);margin-top:7px;line-height:1.4}
+.about-stat-divider{width:1px;background:rgba(255,255,255,.08);display:none}
+
+.about-difference{padding:80px 0;background:var(--g100)}
+.about-difference-head{text-align:center;margin-bottom:52px}
+.about-difference-head .kicker{font-size:.75rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
+.about-difference-head h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#1c2b1c;font-family:'Playfair Display',serif;margin:0 0 14px}
+.about-difference-head p{font-size:.96rem;color:var(--g500);max-width:580px;margin:0 auto;line-height:1.75}
+
+.about-diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.about-diff-card{background:#fff;border-radius:var(--radius-lg);padding:32px 24px;border:1px solid var(--g200);transition:box-shadow .25s,transform .25s}
+.about-diff-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.07);transform:translateY(-3px)}
+.about-diff-icon{width:52px;height:52px;border-radius:12px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.about-diff-icon svg{width:24px;height:24px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.about-diff-card h4{font-size:.97rem;font-weight:700;color:#1c2b1c;font-family:'Source Sans 3',sans-serif;margin:0 0 8px;line-height:1.3}
+.about-diff-card p{font-size:.85rem;color:var(--g500);line-height:1.72;margin:0}
+
+.about-team{padding:80px 0;background:#fff}
+.about-team-head{text-align:center;margin-bottom:52px}
+.about-team-head .kicker{font-size:.75rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
+.about-team-head h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#1c2b1c;font-family:'Playfair Display',serif;margin:0 0 14px}
+.about-team-head p{font-size:.96rem;color:var(--g500);max-width:520px;margin:0 auto;line-height:1.75}
+.about-team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.about-team-card{background:#fff;border:1px solid var(--g200);border-radius:var(--radius-lg);padding:32px 24px;text-align:center;transition:box-shadow .25s,transform .25s}
+.about-team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.07);transform:translateY(-3px)}
+.about-team-avatar{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-weight:800;font-size:1.1rem;color:#fff;letter-spacing:.5px}
+.about-team-card h4{font-size:1rem;font-weight:700;color:#1c2b1c;margin:0 0 4px;font-family:'Source Sans 3',sans-serif}
+.about-team-card .role{font-size:.82rem;color:var(--g400);line-height:1.4}
+.about-team-card .bio{font-size:.82rem;color:var(--g500);line-height:1.68;margin-top:12px;padding-top:12px;border-top:1px solid var(--g200)}
+
+.about-commitment{padding:80px 0;background:var(--green-dark)}
+.about-commitment .container{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-commit-text .kicker{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:3px;margin-bottom:12px}
+.about-commit-text h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#fff;font-family:'Playfair Display',serif;line-height:1.2;margin:0 0 22px}
+.about-commit-text p{font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.82;margin-bottom:14px}
+.about-commit-text p:last-child{margin-bottom:0}
+.about-commit-list{display:flex;flex-direction:column;gap:14px}
+.about-commit-item{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:rgba(255,255,255,.06);border-radius:var(--radius);border:1px solid rgba(255,255,255,.08)}
+.about-commit-item svg{width:20px;height:20px;stroke:var(--green-muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:1px}
+.about-commit-item span{font-size:.9rem;color:rgba(255,255,255,.78);line-height:1.5;font-weight:500}
+
+.about-testimonials{padding:80px 0;background:var(--g100)}
+.about-testi-head{text-align:center;margin-bottom:52px}
+.about-testi-head .kicker{font-size:.75rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}
+.about-testi-head h2{font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;color:#1c2b1c;font-family:'Playfair Display',serif;margin:0}
+.about-testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.about-testi-card{background:#fff;border-radius:var(--radius-lg);padding:36px;border:1px solid var(--g200);box-shadow:0 2px 12px rgba(0,0,0,.04);transition:box-shadow .25s}
+.about-testi-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.07)}
+.about-testi-stars{display:flex;gap:3px;margin-bottom:18px}
+.about-testi-stars svg{width:16px;height:16px;fill:#f59e0b}
+.about-testi-quote{font-size:.95rem;color:#2e2e2e;line-height:1.82;font-style:italic;padding-left:20px;border-left:3px solid var(--green);margin-bottom:22px}
+.about-testi-quote strong{color:#1c2b1c;font-style:normal}
+.about-testi-author{display:flex;align-items:center;gap:12px}
+.about-testi-avatar{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;color:#fff;flex-shrink:0}
+.about-testi-name{font-weight:700;font-size:.9rem;color:#1c2b1c}
+.about-testi-firm{font-size:.76rem;color:var(--g400);margin-top:1px}
+
+@media(max-width:1024px){
+  .about-story .container{grid-template-columns:1fr;gap:44px}
+  .about-stats-grid{grid-template-columns:repeat(3,1fr);gap:36px}
+  .about-diff-grid{grid-template-columns:repeat(2,1fr)}
+  .about-team-grid{grid-template-columns:repeat(2,1fr)}
+  .about-commitment .container{grid-template-columns:1fr;gap:44px}
+  .about-testi-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .about-story{padding:56px 0}
+  .about-stats-strip{padding:48px 0}
+  .about-stats-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  .about-difference{padding:56px 0}
+  .about-diff-grid{grid-template-columns:1fr}
+  .about-team{padding:56px 0}
+  .about-team-grid{grid-template-columns:1fr}
+  .about-commitment{padding:56px 0}
+  .about-testimonials{padding:56px 0}
+  .about-testi-card{padding:24px}
+}
+</style>
+</head><body>
+
+<nav class="top-nav"><div class="container">
+<a href="index.html"><img src="Vertex law marketing.png" alt="Vertex Law Marketing" class="logo-img"></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="#">About &#9662;</a><ul class="dropdown"><li><a href="about.html">About Vertex Law Marketing</a></li><li><a href="services.html">Our Services</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></li>
+<li><a href="index.html#consultation">Request Quote</a></li>
+<li><a href="#">Services &#9662;</a><ul class="dropdown"><li><a href="seo.html">Law Firm SEO Services</a></li><li><a href="web-design.html">Website Design For Law Firms</a></li><li><a href="google-ads.html">Google Ads Agency For Law Firms</a></li><li><a href="facebook.html">Facebook Marketing for Lawyers</a></li><li><a href="youtube.html">YouTube Advertising for Lawyers</a></li></ul></li>
+<li><a href="index.html#consultation">Contact Us</a></li>
+
+</ul>
+<button class="hamburger" aria-label="Menu"><svg class="hamburger-svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path class="bar1" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/><path d="M7 16 27 16"/></svg></button>
+</div></nav>
+
+<!-- ═══════════ PAGE HERO ═══════════ -->
+<div class="page-hero"><div class="container">
+<h1>About Vertex Law Marketing</h1>
+<p>A California-based law firm digital marketing company that works exclusively with law firms across the United States.</p>
+<a href="index.html#consultation" class="btn btn-green btn-round" style="margin-top:24px;display:inline-block">Request a Free Consultation</a>
+</div></div>
+
+<!-- ═══════════ OUR STORY ═══════════ -->
+<section class="about-story"><div class="container">
+<div class="about-story-img">
+<div class="video-placeholder" style="border-radius:16px"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+<p style="text-align:center;font-size:.8rem;color:var(--g400);margin-top:14px;font-style:italic">Our team discusses strategy for a client campaign</p>
+</div>
+<div class="about-story-text">
+<p class="kicker">Our Story</p>
+<h2>From a small team with a big idea, to a full-service powerhouse.</h2>
+<p>Since 2012, Vertex Law Marketing has grown from a small team of passionate digital marketers to an agency of 30+ dedicated professionals who all share one mission: to make our clients the most visible law firms in their markets.</p>
+<p>Unlike most other law firm marketing companies, we don't outsource our work overseas. In fact, we don't outsource anything. We keep everything we do in-house because our people are the brightest and best. Our team is filled with creative, passionate, and knowledgeable people who truly care about the work they perform.</p>
+<p>What makes us unique is our ability to get clients to the first page of Google for the most competitive search terms in their market — and keep them there. We specialize in cutting-edge web design, search engine optimization, and paid advertising to drive measurable growth for law firms.</p>
+<a href="index.html#consultation" class="btn btn-green btn-round" style="margin-top:8px;display:inline-flex;align-items:center;gap:8px">Get a Free Strategy Session <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+</div></section>
+
+<!-- ═══════════ STATS STRIP ═══════════ -->
+<section class="about-stats-strip"><div class="container">
+<div class="about-stats-grid">
+<div><div class="about-stat-num">2012</div><div class="about-stat-label">Year Founded</div></div>
+<div><div class="about-stat-num">30+</div><div class="about-stat-label">Team Members</div></div>
+<div><div class="about-stat-num">90%+</div><div class="about-stat-label">Client Retention Rate</div></div>
+<div><div class="about-stat-num">25K+</div><div class="about-stat-label">Hours Optimizing Campaigns</div></div>
+<div><div class="about-stat-num">500+</div><div class="about-stat-label">Law Firms Served</div></div>
+<div><div class="about-stat-num">400K+</div><div class="about-stat-label">Keywords Monitored Monthly</div></div>
+</div>
+</div></section>
+
+<!-- ═══════════ WHAT SETS US APART ═══════════ -->
+<section class="about-difference"><div class="container">
+<div class="about-difference-head">
+<p class="kicker">What Makes Us Different</p>
+<h2>Built differently from the start.</h2>
+<p>We have clients in California, Texas, Florida, New York, and across the country. We work with law firms of all sizes — from sole practitioners to large multi-location practices.</p>
+</div>
+<div class="about-diff-grid">
+<div class="about-diff-card">
+<div class="about-diff-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+<h4>100% Law Firm Focused</h4>
+<p>We work exclusively with attorneys and law firms — no other industry. That means deeper expertise and better results for you.</p>
+</div>
+<div class="about-diff-card">
+<div class="about-diff-icon"><svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div>
+<h4>Everything In-House</h4>
+<p>We never outsource your work overseas. Every campaign, every piece of content, every ad — handled by our own expert team right here in the U.S.</p>
+</div>
+<div class="about-diff-card">
+<div class="about-diff-icon"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+<h4>Limited Clients Per Market</h4>
+<p>We never work with your direct competitor in your geographic area. Your growth is our exclusive focus. You get full market exclusivity.</p>
+</div>
+<div class="about-diff-card">
+<div class="about-diff-icon"><svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+<h4>Transparent Reporting</h4>
+<p>Monthly reports showing every lead, every click, and every dollar spent. You always know exactly what's working and what we're doing.</p>
+</div>
+</div>
+</div></section>
+
+<!-- ═══════════ TEAM ═══════════ -->
+<section class="about-team"><div class="container">
+<div class="about-team-head">
+<p class="kicker">Our People</p>
+<h2>Meet the Vertex Law Marketing team.</h2>
+<p>Creative, passionate professionals who wake up every morning thinking about how to grow your law firm.</p>
+</div>
+<div class="about-team-grid">
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#5a7d50">MC</div>
+<h4>Michael Chase</h4>
+<span class="role">Founder &amp; CEO</span>
+<p class="bio">Michael founded Vertex Law Marketing in 2012 after spending years managing digital marketing for top personal injury and criminal defense firms. He leads overall strategy and client growth.</p>
+</div>
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#5c6bc0">JW</div>
+<h4>Jennifer Walsh</h4>
+<span class="role">VP of Digital Marketing</span>
+<p class="bio">Jennifer oversees all SEO and paid search teams. With 10+ years in legal marketing, she has managed campaigns for law firms generating thousands of signed cases annually.</p>
+</div>
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#26a69a">DT</div>
+<h4>Daniel Torres</h4>
+<span class="role">Director of SEO</span>
+<p class="bio">Daniel leads our organic search team and has ranked law firms on page one for some of the most competitive legal keywords in the country, including major personal injury markets.</p>
+</div>
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#e07b3f">RK</div>
+<h4>Rachel Kim</h4>
+<span class="role">Director of Content Strategy</span>
+<p class="bio">Rachel manages our content and copywriting team. She ensures every word on your website is optimized to convert visitors into phone calls and signed clients.</p>
+</div>
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#42a5f5">MW</div>
+<h4>Marcus Webb</h4>
+<span class="role">VP of Sales &amp; Client Relations</span>
+<p class="bio">Marcus has helped hundreds of law firms find the right marketing strategy. He leads initial consultations and ensures every new client is set up for long-term success.</p>
+</div>
+<div class="about-team-card">
+<div class="about-team-avatar" style="background:#8d6e63">AF</div>
+<h4>Alicia Flores</h4>
+<span class="role">Senior Account Manager</span>
+<p class="bio">Alicia is the day-to-day contact for many of our top clients. Known for her responsiveness and deep knowledge of legal marketing, she consistently earns rave reviews from attorneys she works with.</p>
+</div>
+</div>
+</div></section>
+
+<!-- ═══════════ OUR COMMITMENT ═══════════ -->
+<section class="about-commitment"><div class="container">
+<div class="about-commit-text">
+<p class="kicker">Our Commitment</p>
+<h2>We're committed to your growth — period.</h2>
+<p>While we don't guarantee specific rankings or lead volumes since no one has control over the constantly changing search engine algorithms, what we can guarantee is our commitment to do everything in our power to make your marketing work for you.</p>
+<p>A client retention rate of over 90% is our most powerful proof point. Attorneys stay with Vertex Law Marketing not because they're locked into a contract — but because what we do works.</p>
+</div>
+<div class="about-commit-list">
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>No long-term contracts — stay because it works, not because you're locked in</span>
+</div>
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>Market exclusivity — we never work with your direct competitor in your area</span>
+</div>
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>100% in-house work — no outsourcing, ever</span>
+</div>
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>Dedicated account manager who knows your market and your firm</span>
+</div>
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>Monthly performance reports with full transparency on every metric</span>
+</div>
+<div class="about-commit-item">
+<svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+<span>Works with law firms of all practice areas and market sizes</span>
+</div>
+</div>
+</div></section>
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section class="about-testimonials"><div class="container">
+<div class="about-testi-head">
+<p class="kicker">Client Stories</p>
+<h2>What our clients say.</h2>
+</div>
+<div class="about-testi-grid">
+<div class="about-testi-card">
+<div class="about-testi-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
+<p class="about-testi-quote"><strong>Vertex Law Marketing completely transformed our Google Ads strategy.</strong> Within 3 months, our cost per lead dropped 40% and we went from 5 to over 20 signed cases per month. I cannot overemphasize how happy we are with the entire team. Our firm would not be where it is today without Vertex Law Marketing.</p>
+<div class="about-testi-author">
+<div class="about-testi-avatar" style="background:#5a7d50">JM</div>
+<div><div class="about-testi-name">James Mitchell</div><div class="about-testi-firm">Mitchell &amp; Associates — Personal Injury</div></div>
+</div>
+</div>
+<div class="about-testi-card">
+<div class="about-testi-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
+<p class="about-testi-quote"><strong>After two failed agencies, Vertex Law Marketing finally delivered.</strong> We now rank on page one for over 30 keywords in our market. Alicia is hands down the best account manager I have ever encountered. Results far exceeded our expectations.</p>
+<div class="about-testi-author">
+<div class="about-testi-avatar" style="background:#26a69a">SR</div>
+<div><div class="about-testi-name">Sarah Reeves</div><div class="about-testi-firm">Reeves Criminal Defense — Criminal Law</div></div>
+</div>
+</div>
+</div>
+</div></section>
+
+<!-- ═══════════ BOTTOM CTA ═══════════ -->
+<section class="bottom-cta"><div class="container">
+<h2>Ready for law firm marketing that actually works?</h2>
+<p>Schedule a free, zero-obligation consultation with one of our senior consultants today.</p>
+<div class="bottom-cta-links">
+<a href="index.html#consultation" class="btn-primary">Schedule a Free Strategy Session</a>
+
+</div>
+</div></section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand"><a href="index.html"><img src="Vertex law marketing.png" alt="Vertex Law Marketing" style="height:36px;filter:brightness(10)"></a><p>Google Ads, SEO, and web design exclusively for law firms.</p></div>
+<div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="seo.html">SEO Services</a></li><li><a href="web-design.html">Web Design</a></li><li><a href="google-ads.html">Google Ads</a></li><li><a href="facebook.html">Facebook</a></li><li><a href="youtube.html">YouTube</a></li></ul></div>
+<div><h4>Practice Areas</h4><ul><li><a href="#">Personal Injury</a></li><li><a href="#">Criminal Defense</a></li><li><a href="#">Family Law</a></li><li><a href="#">Immigration</a></li></ul></div>
+</div><div class="footer-bottom"><div class="footer-copy">&copy; Vertex Law Marketing 2026</div><div class="footer-socials"><a href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a></div></div></div></footer>
+
+<script>
+(function(){
+  var ham=document.querySelector('.hamburger');
+  var nav=document.querySelector('.nav-links');
+  if(ham&&nav){
+    ham.addEventListener('click',function(){
+      var open=this.classList.toggle('active');
+      nav.classList.toggle('open',open);
+      document.body.style.overflow=open?'hidden':'';
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        ham.classList.remove('active');
+        nav.classList.remove('open');
+        document.body.style.overflow='';
+      });
+    });
+  }
+  window.addEventListener('scroll',function(){
+    var topNav=document.querySelector('.top-nav');
+    if(topNav)topNav.classList.toggle('scrolled',window.scrollY>10);
+  },{passive:true});
+})();
+</script>
+</body></html>
