@@ -909,3 +909,116 @@ h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;color:#1c2b1c}
 
 /* Form fields — always white background even on focus */
 .mstep-form input:focus,.mstep-form select:focus,.mstep-form textarea:focus{border-color:#f26546;background:#fff}
+
+/* === SEO page — sections 21-32 === */
+/* SEO21 — Local SEO Trust Triangle */
+.seo-triangle{background:#fff;padding:18px 0 0}
+.seo-tri-head{text-align:center;max-width:760px;margin:0 auto 32px}
+.seo-tri-eyebrow{display:block;font-family:'Source Sans 3',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#d48a2c;margin-bottom:14px}
+.seo-tri-head h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;color:var(--navy);line-height:1.15;margin:0 0 16px}
+.seo-tri-accent{color:#1aa6b8}
+.seo-tri-head p{font-size:1rem;color:var(--g500);line-height:1.7;margin:0 auto;max-width:620px}
+.seo-tri-diagram{position:relative;background:#f6f7f9;border:1px solid var(--g200);border-radius:16px;max-width:760px;height:480px;margin:0 auto}
+.seo-tri-lines{position:absolute;inset:0;width:100%;height:100%}
+.seo-tri-node{position:absolute;transform:translate(-50%,-50%);width:96px;height:96px;border-radius:50%;background:var(--nc,#1aa6b8);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Source Sans 3',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.6px;text-transform:uppercase;line-height:1.2;box-shadow:0 8px 22px rgba(26,42,58,.18)}
+.seo-tri-node small{font-weight:600;font-size:.62rem;opacity:.92}
+.seo-tri-top{left:50%;top:18%}
+.seo-tri-bl{left:16%;top:80%;width:88px;height:88px}
+.seo-tri-br{left:84%;top:80%;width:88px;height:88px}
+.seo-tri-center{left:50%;top:52%;background:#1a2330;width:104px;height:104px}
+.seo-tri-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:980px;margin:34px auto 0}
+.seo-tri-card{border:1px solid var(--g200);border-top:3px solid var(--cc,#1aa6b8);border-radius:10px;padding:22px 24px 24px;box-shadow:0 6px 20px rgba(26,42,58,.05)}
+.seo-tri-card h3{font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:800;color:var(--navy);margin:0 0 14px}
+.seo-tri-card ul{list-style:none;margin:0;padding:0}
+.seo-tri-card li{position:relative;font-size:.86rem;color:var(--g600);line-height:1.5;padding-left:18px;margin-bottom:9px}
+.seo-tri-card li::before{content:'\25B8';position:absolute;left:0;color:var(--cc,#1aa6b8);font-size:.78rem}
+@media(max-width:768px){.seo-tri-cards{grid-template-columns:1fr}.seo-tri-diagram{height:380px}.seo-tri-node{width:78px;height:78px;font-size:.62rem}.seo-tri-center{width:86px;height:86px}}
+/* SEO23 / SEO25 — comparison matrix tables */
+.seo-matrix{background:#fff;padding:8px 0 58px}
+.seo-matrix-inner{max-width:1000px;margin:0 auto}
+.seo-matrix-eyebrow{display:block;font-family:'Source Sans 3',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.seo-matrix h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:800;color:var(--navy);line-height:1.15;margin:0 0 14px}
+.seo-matrix-sub{font-size:1rem;color:var(--g500);line-height:1.65;margin:0 0 26px;max-width:840px}
+.seo-matrix-scroll{overflow-x:auto;border-radius:12px}
+.seo-matrix-table{width:100%;border-collapse:collapse;min-width:680px;background:#fff;border:1px solid var(--g200);border-radius:12px;overflow:hidden}
+.seo-matrix-table thead th{background:#1a2330;color:#fff;font-family:'Source Sans 3',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;text-align:center;padding:16px 14px}
+.seo-matrix-table thead th:first-child{text-align:left}
+.seo-matrix-table thead th i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.seo-matrix-table td{padding:15px 14px;text-align:center;font-size:.9rem;border-top:1px solid var(--g200)}
+.seo-matrix-table td:first-child{text-align:left;font-weight:700;color:var(--navy)}
+.seo-matrix-table tbody tr:nth-child(even){background:#fafbfc}
+.seo-matrix-table .hi{color:#2f9e6b;font-weight:800;letter-spacing:.5px}
+.seo-matrix-table .md{color:#d48a2c;font-weight:700}
+.seo-matrix-table .lo{color:var(--g400);font-weight:600}
+.seo-matrix-note{font-size:.78rem;color:var(--g400);line-height:1.6;margin:18px 0 0}
+.seo-badge{display:inline-block;border-radius:50px;padding:5px 14px;font-family:'Source Sans 3',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#fff;white-space:nowrap}
+.bd-red{background:#e0455a}.bd-gold{background:#e0921e}.bd-purple{background:#9d86d6}.bd-green{background:#2f9e6b}
+/* SEO27 — vanity vs revenue compare */
+.seo-compare{background:#fff;padding:8px 0 60px}
+.seo-compare-inner{max-width:1000px;margin:0 auto}
+.seo-compare-eyebrow{display:block;font-family:'Source Sans 3',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6455f;margin-bottom:12px}
+.seo-compare h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:800;color:var(--navy);line-height:1.15;margin:0 0 14px}
+.seo-compare-sub{font-size:1rem;color:var(--g500);line-height:1.65;margin:0 0 30px;max-width:840px}
+.seo-compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.seo-compare-col{border:1px solid var(--g200);border-radius:14px;overflow:hidden;background:#fafbfc}
+.seo-compare-head{padding:24px 28px;color:#fff;font-family:'Source Sans 3',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.seo-compare-head strong{display:block;font-size:1.2rem;letter-spacing:0;text-transform:none;margin-top:4px}
+.seo-compare-arrow{margin-right:6px;font-size:.7rem}
+.seo-compare-bad .seo-compare-head{background:#d6455f}
+.seo-compare-good .seo-compare-head{background:#1f9d6b}
+.seo-compare-list{padding:8px 28px 26px}
+.seo-compare-item{padding:18px 0;border-bottom:1px solid var(--g200)}
+.seo-compare-item:last-child{border-bottom:0}
+.seo-compare-item h4{font-family:'Source Sans 3',sans-serif;font-size:.98rem;font-weight:800;color:var(--navy);margin:0 0 6px}
+.seo-compare-item p{font-size:.86rem;color:var(--g500);line-height:1.6;margin:0}
+@media(max-width:768px){.seo-compare-grid{grid-template-columns:1fr}}
+/* SEO29 — scorecard */
+.seo-scorecard{background:#fff;padding:14px 0 62px}
+.seo-score-head{text-align:center;max-width:760px;margin:0 auto 40px}
+.seo-score-eyebrow{display:block;font-family:'Source Sans 3',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#2f9e6b;margin-bottom:14px}
+.seo-score-head h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;color:var(--navy);line-height:1.15;margin:0 0 16px}
+.seo-score-head p{font-size:1rem;color:var(--g500);line-height:1.7;margin:0 auto;max-width:600px}
+.seo-score-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto}
+.seo-score-card{border:1px solid var(--g200);border-radius:14px;padding:26px 28px 22px;box-shadow:0 6px 20px rgba(26,42,58,.05)}
+.seo-score-wide{grid-column:1/-1}
+.seo-score-card-head{display:flex;align-items:center;gap:12px;font-family:'Source Sans 3',sans-serif;font-size:.96rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--navy);padding-bottom:16px;margin-bottom:14px;border-bottom:1px solid var(--g200)}
+.seo-score-num{flex-shrink:0;width:26px;height:26px;border-radius:7px;background:var(--sc,#1aa6b8);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:800}
+.seo-score-card ul{list-style:none;margin:0;padding:0}
+.seo-score-card li{position:relative;font-size:.9rem;color:var(--g600);line-height:1.5;padding-left:28px;margin-bottom:14px}
+.seo-score-card li::before{content:'';position:absolute;left:0;top:1px;width:16px;height:16px;border:1.5px solid var(--g300);border-radius:4px}
+.seo-score-wide ul{columns:2;column-gap:34px}
+.seo-score-tiers{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 40px;max-width:1000px;margin:26px auto 0;background:#1a2330;border-radius:14px;padding:26px 30px}
+.seo-score-tiers-label{width:100%;text-align:center;font-family:'Source Sans 3',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px}
+.seo-score-tier{text-align:center}
+.seo-score-tier strong{display:block;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;line-height:1}
+.seo-score-tier span{font-size:.8rem;color:rgba(255,255,255,.75)}
+@media(max-width:768px){.seo-score-grid{grid-template-columns:1fr}.seo-score-wide ul{columns:1}}
+/* SEO30 — FAQ */
+.seo-faq{background:#fff;padding:10px 0 58px}
+.seo-faq-inner{max-width:880px;margin:0 auto}
+.seo-faq h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;color:var(--navy);line-height:1.18;margin:0 0 14px}
+.seo-faq-item{padding:22px 0;border-bottom:1px solid var(--g200)}
+.seo-faq-item:last-child{border-bottom:0}
+.seo-faq-item h3{font-family:'Source Sans 3',sans-serif;font-size:1.12rem;font-weight:800;color:#1aa6b8;line-height:1.35;margin:0 0 12px}
+.seo-faq-item p{font-size:.96rem;color:var(--g600);line-height:1.8;margin:0}
+/* SEO31 — resource hub */
+.seo-hub{background:#fff;padding:8px 0 56px}
+.seo-hub-cat{margin-bottom:34px}
+.seo-hub-cathead{font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#1aa6b8;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--g200)}
+.seo-hub-cathead-strong{border-bottom:2px solid #1aa6b8}
+.seo-hub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.seo-hub-card{background:#f7f8fa;border:1px solid var(--g200);border-radius:8px;padding:16px 18px;font-size:.86rem;font-weight:600;color:var(--navy);line-height:1.4;transition:all .2s}
+.seo-hub-card:hover{box-shadow:0 6px 18px rgba(26,42,58,.07);transform:translateY(-2px);border-color:#bfe2e7}
+@media(max-width:900px){.seo-hub-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.seo-hub-grid{grid-template-columns:1fr}}
+/* SEO32 — testimonials band */
+.seo-testi{position:relative;padding:0 0 70px;margin-top:24px}
+.seo-testi-band{position:relative;height:170px;background:#1aa6b8;overflow:hidden}
+.seo-testi-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.16) 14px,transparent 15px);background-size:64px 64px;opacity:.6}
+.seo-testi-cards{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:980px;margin:-110px auto 0;position:relative;z-index:2;align-items:start}
+.seo-testi-card{background:#fff;border-radius:14px;box-shadow:0 18px 50px rgba(26,42,58,.16);padding:34px 38px}
+.seo-testi-card-b{margin-top:46px}
+.seo-testi-mark{font-family:'Playfair Display',serif;font-size:3rem;line-height:.5;color:#1aa6b8;font-weight:800;display:block;margin-bottom:14px}
+.seo-testi-card p{font-family:'Playfair Display',serif;font-size:1.12rem;font-style:italic;color:var(--navy);line-height:1.5;margin:0 0 16px}
+.seo-testi-attr{font-style:italic;color:var(--g500);font-size:.86rem;font-weight:600}
+@media(max-width:768px){.seo-testi-cards{grid-template-columns:1fr;gap:20px}.seo-testi-card-b{margin-top:0}}
