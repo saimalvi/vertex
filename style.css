@@ -1191,3 +1191,27 @@ h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;color:#1c2b1c}
 
 /* Form fields — always white background even on focus */
 .mstep-form input:focus,.mstep-form select:focus,.mstep-form textarea:focus{border-color:#f26546;background:#fff}
+
+/* ═══════════════════════════════════════════════
+   ACCESSIBILITY — keyboard focus & reduced motion
+   ═══════════════════════════════════════════════ */
+
+/* Visible keyboard focus (keyboard users only; mouse clicks stay clean).
+   Fills the gap left by outline:none on form fields and other controls. */
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,
+.hamburger:focus-visible,[tabindex]:focus-visible{
+  outline:2px solid var(--green);outline-offset:3px;border-radius:5px}
+
+/* Respect the OS "reduce motion" setting: stop the marquees and entrance
+   animations, and force animated-in elements visible so nothing is
+   stranded at opacity:0. */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .logo-cloud-track,.testi-track{animation:none!important}
+  .hero-badge,.hero-h1,.hero-subtitle,.hero-cta-group,.hero-image-wrap,
+  .solutions-img{opacity:1!important;transform:none!important}
+  .testimonials-bar.testi-pre-anim{opacity:1!important;transform:none!important}
+}
